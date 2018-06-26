@@ -25,6 +25,7 @@ namespace Muli_Pariwar_Lagat
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/create.css",
                       "~/Content/site.css"));
         }
     }

@@ -12,7 +12,10 @@ namespace Muli_Pariwar_Lagat.Models
         {
         }
         public DbSet<Muli> Mulis { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
-       
+
     }
 }
