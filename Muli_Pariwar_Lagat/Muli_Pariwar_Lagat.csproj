@@ -215,6 +215,8 @@
     <Content Include="Views\Muli\Index.cshtml" />
     <Content Include="Views\Muli\Create.cshtml" />
     <Content Include="Views\Muli\Edit.cshtml" />
+    <Content Include="Views\Muli\Delete.cshtml" />
+    <Content Include="Views\Muli\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

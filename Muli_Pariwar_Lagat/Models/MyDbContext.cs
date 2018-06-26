@@ -12,5 +12,7 @@ namespace Muli_Pariwar_Lagat.Models
         {
         }
         public DbSet<Muli> Mulis { get; set; }
+
+       
     }
 }

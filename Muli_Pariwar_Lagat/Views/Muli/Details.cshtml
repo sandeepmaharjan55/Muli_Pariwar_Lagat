@@ -1,0 +1,138 @@
+﻿@model Muli_Pariwar_Lagat.Models.Muli
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MuliViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GharNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GharNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Woda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Woda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sabik_G_B_S)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sabik_G_B_S)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sabik_woda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sabik_woda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Naam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sikshhya)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sikshhya)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kaam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kaam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JanmaMiti)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JanmaMiti)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JanmaSthan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JanmaSthan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NagarikId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NagarikId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NagarikJariDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NagarikJariDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NagarikJariJilla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NagarikJariJilla)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

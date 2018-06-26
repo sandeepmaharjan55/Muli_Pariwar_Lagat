@@ -25,7 +25,7 @@ namespace Muli_Pariwar_Lagat.Controllers
        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(MuliViewModel Mul)
+        public ActionResult Create(Muli Mul)
         {
             if (ModelState.IsValid)
             {
@@ -60,25 +60,55 @@ namespace Muli_Pariwar_Lagat.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Muli mul = db.Mulis.Find(id);
-            if (mul == null)
+            Muli Mul = db.Mulis.Find(id);
+            if (Mul == null)
             {
                 return HttpNotFound();
             }
-            return View(mul);
+            return View(Mul);
         }
 
          [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GharNum,Woda,sabik_G_B_S,sabik_woda,tol,Naam,Sikshhya,AddedDate,Kaam,ContactNum,JanmaMiti,JanmaSthan,NagarikId,NagarikJariDate,NagarikJariJilla")] Muli mul)
+        public ActionResult Edit(Muli Mul)
         {
+          
             if (ModelState.IsValid)
             {
-                db.Entry(mul).State = EntityState.Modified;
+                var Person = db.Mulis.Find(Mul.Id);
+                Person.GharNum = Mul.GharNum;
+                Person.Woda = Mul.Woda;
+                Person.sabik_G_B_S = Mul.sabik_G_B_S;
+                Person.sabik_woda = Mul.sabik_woda;
+                Person.tol = Mul.tol;
+                Person.Naam = Mul.Naam;
+                Person.Sikshhya = Mul.Sikshhya;
+                Person.AddedDate = DateTime.Now;
+                Person.Kaam = Mul.Kaam;
+                Person.ContactNum = Mul.ContactNum;
+                Person.JanmaMiti = Mul.JanmaMiti;
+                Person.JanmaSthan = Mul.JanmaSthan;
+                Person.NagarikId = Mul.NagarikId;
+                Person.NagarikJariDate = Mul.NagarikJariDate;
+                Person.NagarikJariJilla = Mul.NagarikJariJilla;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(mul);
+            return View(Mul);
+        
+    }
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Muli Mul = db.Mulis.Find(id);
+            if (Mul == null)
+            {
+                return HttpNotFound();
+            }
+            return View(Mul);
         }
 
         // GET: Account/Delete/5
