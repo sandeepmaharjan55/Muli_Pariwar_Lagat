@@ -1,0 +1,115 @@
+﻿@model IEnumerable<Muli_Pariwar_Lagat.Models.Muli>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            घर नं.
+        </th>
+        <th>
+            वडा
+        </th>
+        <th>
+            साविक गा.वि.स.
+        </th>
+        <th>
+            साविक वडा
+        </th>
+        <th>
+            तोल
+        </th>
+        <th>
+            नाम
+        </th>
+        <th>
+            शिक्षा
+        </th>
+       
+        <th>
+            पेशा
+        </th>
+        <th>
+            सम्पर्क नं.
+            </th>
+        <th>
+            जन्म मिति
+        </th>
+        <th>
+            जन्म स्थल
+        </th>
+        <th>
+            नागरिता नं.
+        </th>
+        <th>
+            जारी मिति
+        </th>
+        <th>
+            जारी जिल्ला
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GharNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Woda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sabik_G_B_S)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sabik_woda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sikshhya)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Kaam)
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactNum)
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JanmaMiti)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JanmaSthan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NagarikId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NagarikJariDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NagarikJariJilla)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
