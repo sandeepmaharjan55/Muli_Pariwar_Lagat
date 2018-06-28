@@ -59,3 +59,5 @@ c:\users\maharjan\documents\visual studio 2015\Projects\Muli_Pariwar_Lagat\Muli_
 c:\users\maharjan\documents\visual studio 2015\Projects\Muli_Pariwar_Lagat\Muli_Pariwar_Lagat\obj\Debug\Muli_Pariwar_Lagat.csproj.GenerateResource.Cache
 c:\users\maharjan\documents\visual studio 2015\Projects\Muli_Pariwar_Lagat\Muli_Pariwar_Lagat\obj\Debug\Muli_Pariwar_Lagat.Migrations.MuliModelEdit.resources
 c:\users\maharjan\documents\visual studio 2015\Projects\Muli_Pariwar_Lagat\Muli_Pariwar_Lagat\obj\Debug\Muli_Pariwar_Lagat.Migrations.Admin.resources
+C:\Users\maharjan\documents\visual studio 2015\Projects\Muli_Pariwar_Lagat\Muli_Pariwar_Lagat\obj\Debug\Muli_Pariwar_Lagat.Migrations.PDF.resources
+C:\Users\maharjan\documents\visual studio 2015\Projects\Muli_Pariwar_Lagat\Muli_Pariwar_Lagat\obj\Debug\Muli_Pariwar_Lagat.Migrations.PDFremovedMuli.resources

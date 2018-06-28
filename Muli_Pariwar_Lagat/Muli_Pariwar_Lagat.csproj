@@ -181,9 +181,18 @@
     <Compile Include="Migrations\201806261717275_Admin.Designer.cs">
       <DependentUpon>201806261717275_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806280905060_PDF.cs" />
+    <Compile Include="Migrations\201806280905060_PDF.Designer.cs">
+      <DependentUpon>201806280905060_PDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806280918474_PDFremovedMuli.cs" />
+    <Compile Include="Migrations\201806280918474_PDFremovedMuli.Designer.cs">
+      <DependentUpon>201806280918474_PDFremovedMuli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ghar_muli_ko_bibarand_Model.cs" />
     <Compile Include="Models\MyDbContext.cs" />
+    <Compile Include="Models\PdfFile.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\CustomMembershipProvider.cs" />
@@ -287,6 +296,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806261717275_Admin.resx">
       <DependentUpon>201806261717275_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806280905060_PDF.resx">
+      <DependentUpon>201806280905060_PDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806280918474_PDFremovedMuli.resx">
+      <DependentUpon>201806280918474_PDFremovedMuli.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
